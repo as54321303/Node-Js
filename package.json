@@ -1,0 +1,23 @@
+{
+  "name": "node-programs",
+  "version": "1.0.0",
+  "description": "Learning Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as54321303/Node-Js.git"
+  },
+  "author": "Ayush Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as54321303/Node-Js/issues"
+  },
+  "homepage": "https://github.com/as54321303/Node-Js#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
