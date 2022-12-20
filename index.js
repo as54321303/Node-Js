@@ -1,13 +1,17 @@
-let a=10;
-let b=20;
+const express=require('express');
 
-let waitingData=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-       resolve(40)
-    },5000)
+const app=express();
+
+app.get('',(req,res)=>{
+      res.send('Welcome, This is Home Page!');
 })
 
-
-waitingData.then((data)=>{
-    console.log(a+data)
+app.get('/about',(req,res)=>{
+      res.send('Welcome, This is About Us Page!');
 })
+
+app.get('/help',(req,res)=>{
+      res.send('Welcome, This is Help Page!');
+})
+
+app.listen(8000)
