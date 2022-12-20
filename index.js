@@ -1,7 +1,13 @@
-console.log('first...')
+let a=10;
+let b=20;
 
-setTimeout(()=>{
-      console.log('second...')
-},2000)
+let waitingData=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+       resolve(40)
+    },5000)
+})
 
-console.log('third...')
+
+waitingData.then((data)=>{
+    console.log(a+data)
+})
